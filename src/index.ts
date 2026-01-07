@@ -10,17 +10,3 @@ const port = process.env.port || 4000
 server.listen(port,() => {
     console.log('Servidor Funcionando en el puerto:', port)
 })
-
- 
-server.get('/blog',(req,res) => {
-    res.send('Este es el Blog')
-})
-
-server.get('/nosotros',(req,res) => {
-    res.send('Esta es la seccion Nosotros')
-})
-
-server.get('/ecommerce',(req,res) => {
-    res.send('Este es un Ecommerce')
-})
- 
