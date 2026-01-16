@@ -1,11 +1,11 @@
 
 //Importo y configuro las variables de entorno
-import dotenv from 'dotenv'
-dotenv.config()
-
+ 
 //Import Express
 //const express  = require('express') //CJS Commun -> Ya no se utiliza
 import express from 'express' //ESM Ecmascript modules
+import 'dotenv/config'
+ 
 import router from './router.js'
 //Importo el metodo de conexion a la bd
 import {connectDB} from './config/db.js'
@@ -13,7 +13,7 @@ import {connectDB} from './config/db.js'
 
 //Create a express server instance
 const app = express()
-//Ejecuto la conexion
+//Ejecuto la conexion a la bd
 connectDB()
  
 
